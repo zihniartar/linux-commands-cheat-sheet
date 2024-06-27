@@ -1,6 +1,3 @@
-# linux-commands-cheat-sheet
-
-
 # Linux/Ubuntu Server Cheatlist
 
 ## Systemverwaltung
