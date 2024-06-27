@@ -246,7 +246,7 @@ chmod +x <datei>                    # Datei ausführbar machen
 ```
 ## Systemverwaltung
 
-### Smartstore
+### Smartstore.Web ausführbar machen
 ```bash
 chmod +x Smartstore.Web           # Make Smartstore.Web executable
 # Set file und folder rights - begin
@@ -259,3 +259,15 @@ chmod -R g+w /var/www/smartstore/Modules &&
 chmod +x Smartstore.Web
 # Set file und folder rights - end
 ```
+
+### Datei- und Ordnerrechte setzen
+```bash
+chown -R www-data /var/www/smartstore/ && 
+chgrp -R www-data /var/www/smartstore/ &&
+chmod -R 750 /var/www/smartstore/ &&
+chmod g+s /var/www/smartstore/ &&
+chmod -R g+w /var/www/smartstore/App_Data &&
+chmod -R g+w /var/www/smartstore/Modules &&
+chmod +x Smartstore.Web
+```
+
