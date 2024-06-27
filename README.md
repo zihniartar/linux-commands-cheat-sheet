@@ -259,16 +259,7 @@ openssl genrsa -out privkey.pem  &#8203;:citation[oaicite:0]{index=0}&#8203;
 
 ### Smartstore.Web ausführbar machen
 ```bash
-chmod +x Smartstore.Web           # Make Smartstore.Web executable
-# Set file und folder rights - begin
-chown -R www-data /var/www/smartstore/ && 
-chgrp -R www-data /var/www/smartstore/ &&
-chmod -R 750 /var/www/smartstore/ &&
-chmod g+s /var/www/smartstore/ &&
-chmod -R g+w /var/www/smartstore/App_Data &&
-chmod -R g+w /var/www/smartstore/Modules &&
-chmod +x Smartstore.Web
-# Set file und folder rights - end
+chmod +x Smartstore.Web           
 ```
 
 ### Datei- und Ordnerrechte setzen
