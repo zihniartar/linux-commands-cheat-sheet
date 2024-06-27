@@ -247,8 +247,13 @@ chmod +x <datei>                    # Datei ausführbar machen
 ## Systemverwaltung
 
 ### Smartstore
-```Make Smartstore.Web executable
-chmod +x Smartstore.Web           # Kernel-Version anzeigen
-lsb_release -a     # Distribution anzeigen
-hostnamectl        # Hostname und OS-Informationen anzeigen
+```bash
+chmod +x Smartstore.Web           # Make Smartstore.Web executable
+chown -R www-data /var/www/smartstore/ && # Set file und folder rights
+chgrp -R www-data /var/www/smartstore/ &&
+chmod -R 750 /var/www/smartstore/ &&
+chmod g+s /var/www/smartstore/ &&
+chmod -R g+w /var/www/smartstore/App_Data &&
+chmod -R g+w /var/www/smartstore/Modules &&
+chmod +x Smartstore.Web
 ```
