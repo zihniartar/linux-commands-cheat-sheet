@@ -244,7 +244,7 @@ chmod 644 <datei>                   # Rechte auf rw-r--r-- setzen
 chmod 600 <datei>                   # Rechte auf rw------- setzen
 chmod +x <datei>                    # Datei ausführbar machen
 ```
-## Systemverwaltung
+## Smartstore
 
 ### Smartstore.Web ausführbar machen
 ```bash
