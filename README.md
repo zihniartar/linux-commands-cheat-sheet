@@ -244,6 +244,17 @@ chmod 644 <datei>                   # Rechte auf rw-r--r-- setzen
 chmod 600 <datei>                   # Rechte auf rw------- setzen
 chmod +x <datei>                    # Datei ausführbar machen
 ```
+
+## SSL
+
+### SSL-Zertifikate erstellen und verwalten
+```bash
+sudo apt install openssl
+openssl genrsa -out privkey.pem  &#8203;:citation[oaicite:0]{index=0}&#8203;
+
+```
+
+
 ## Smartstore
 
 ### Smartstore.Web ausführbar machen
