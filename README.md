@@ -257,6 +257,28 @@ openssl genrsa -out privkey.pem  &#8203;:citation[oaicite:0]{index=0}&#8203;
 
 ## Smartstore
 
+### Kestrel-Dienst stoppen und starten
+```bash
+sudo systemctl stop kestrel-smartstore.service &&
+sudo systemctl start kestrel-smartstore.service        
+```
+
+### Aktualisieren der Systemd-Konfiguration
+```bash
+systemctl daemon-reload     
+```
+
+### Dienst-Konfiguration im Editor öffnen
+```bash
+sudo nano /etc/systemd/system/kestrel-smartstore.service 
+```
+
+### Log-Datei des Dienstes öffnen
+```bash
+sudo journalctl -fu kestrel-smartstore.service
+```
+
+
 ### Smartstore.Web ausführbar machen
 ```bash
 chmod +x Smartstore.Web           
