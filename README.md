@@ -254,6 +254,27 @@ openssl genrsa -out privkey.pem  &#8203;:citation[oaicite:0]{index=0}&#8203;
 
 ```
 
+## WKHTMLTOPDF
+Eine gepatchte WKHTMLTOPDF installieren
+
+### Die alte Version deinstallieren
+```bash
+sudo apt-get remove --purge wkhtmltopdf
+```
+
+### Die neue VErsion herunterladen
+Hier denm Link zur passenden aktuellen Version kopieren und unten  ersetzen: 
+https://wkhtmltopdf.org/downloads.html
+
+```bash
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+
+```
+
+### Die aktuelle Version prüfen
+```bash
+wkhtmltopdf --version
+```
 
 ## Smartstore
 
