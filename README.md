@@ -262,8 +262,8 @@ Eine gepatchte WKHTMLTOPDF installieren
 sudo apt-get remove --purge wkhtmltopdf
 ```
 
-### Die neue VErsion herunterladen
-Hier denm Link zur passenden aktuellen Version kopieren und unten  ersetzen: 
+### Die neue Version herunterladen
+Hier aus dem Link den Link zur passenden aktuellen Version kopieren und unten ersetzen: 
 https://wkhtmltopdf.org/downloads.html
 
 ```bash
