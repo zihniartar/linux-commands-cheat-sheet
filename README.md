@@ -345,3 +345,8 @@ server {
 sudo nginx -t
 ```
 
+##### 1. Reload Nginx
+```nginx
+sudo nginx -s reload
+```
+
