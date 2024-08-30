@@ -339,3 +339,7 @@ server {
     ...
 }
 
+##### 1. Test the Nginx Configuration
+```nginx
+sudo nginx -t
+
