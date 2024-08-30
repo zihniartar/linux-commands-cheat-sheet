@@ -316,3 +316,26 @@ chmod -R g+w /var/www/smartstore/Modules &&
 chmod +x Smartstore.Web
 ```
 
+## NGINX
+
+### Fixing "413 Request Entity Too Large" Error in Nginx
+
+The **413 Request Entity Too Large** error occurs when a client attempts to upload a file that exceeds the maximum upload size allowed by the Nginx web server. To resolve this issue, you need to increase the allowed upload size in the Nginx configuration files.
+
+#### Step-by-Step Guide
+
+##### 1. Locate the Nginx Configuration File
+
+Open the Nginx configuration file where you want to set the maximum upload size. This can either be the main configuration file (`nginx.conf`) or a specific configuration file for your site (e.g., in `/etc/nginx/sites-available/`).
+
+##### 2. Edit the Configuration File
+
+Add or modify the `client_max_body_size` directive in the appropriate block (`http`, `server`, or `location`) to set the desired maximum upload size. For example, to allow uploads up to 100MB:
+
+```nginx
+server {
+    ...
+    client_max_body_size 100M;  # Set the maximum upload size to 100MB
+    ...
+}
+
