@@ -338,8 +338,10 @@ server {
     client_max_body_size 100M;  # Set the maximum upload size to 100MB
     ...
 }
+```
 
 ##### 1. Test the Nginx Configuration
 ```nginx
 sudo nginx -t
+```
 
