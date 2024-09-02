@@ -1,5 +1,5 @@
 
-# Linux/Ubuntu Server Cheatlist
+# Linux/Ubuntu Server Cheat Sheet
 
 ## Systemverwaltung
 
