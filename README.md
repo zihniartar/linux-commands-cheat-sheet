@@ -267,7 +267,11 @@ Hier aus dem Link den Link zur passenden aktuellen Version kopieren und unten er
 https://wkhtmltopdf.org/downloads.html
 
 ```bash
+sudo apt-get update
+sudo apt-get install -y wget
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+sudo apt install -y ./wkhtmltox_0.12.6-1.bionic_amd64.deb
+
 
 ```
 
